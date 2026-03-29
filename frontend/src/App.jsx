@@ -10,6 +10,7 @@ function App() {
   return (
     <>
       <h1>This is my first page.</h1>
+      <h2>Helloooo</h2>
     </>
   )
 }
