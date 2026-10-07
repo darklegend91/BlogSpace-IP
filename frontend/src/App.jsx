@@ -4,7 +4,9 @@ import HomePage from "./pages/HomePage"
 import BlogDetailPage from "./pages/BlogDetailPage"
 import CreateBlogPage from "./pages/CreateBlogPage"
 import ProfilePage from "./pages/ProfilePage"
-import EditBlog from "./pages/EditBlog"
+import SignInPage from "./pages/SignInPage"
+import SignUpPage from "./pages/SignUpPage"
+import "./App.css"
 
 function App() {
   return (
@@ -16,8 +18,8 @@ function App() {
             <Route path="/blog/:id" element={<BlogDetailPage />} />
             <Route path="/create" element={<CreateBlogPage />} />
             <Route path="/profile" element={<ProfilePage />} />
-            <Route path="/profile/:id" element={<ProfilePage />} />
-            <Route path="/edit/:id" element={<EditBlog />} />
+            <Route path="/auth/signin" element={<SignInPage />} />
+            <Route path="/auth/signup" element={<SignUpPage />} />
           </Routes>
         </div>
       </Router>
